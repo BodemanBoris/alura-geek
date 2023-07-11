@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="produc__generator.css" />
+    <link rel="stylesheet" href="product-add.css" />
+    <title>Productos - AluraGeek</title>
+  </head>
+
+  <!-- *************  BODY ************** -->
+  <body>
+    <header>
+      <a class="sin__decoration" href="index.html">
+        <div class="logo__container">
+          <span class="material-symbols-outlined control">
+            stadia_controller
+          </span>
+          <h1 class="header__title">
+            Alura<span class="header__title-gray">Geek</span>
+          </h1>
+        </div>
+      </a>
+      <div class="interactive__container">
+        <button class="blue__btn" id="cerrar__sesion">Cerrar sesion</button>
+      </div>
+    </header>
+
+    <!-- ******************************* -->
+    <!-- ********* MAIN ********* -->
+    <!-- ******************************* -->
+
+    <main class="product__generator">
+      <h2 class="main__title">Administracion de productos</h2>
+      <section class="crud__form">
+        <form action="" id="form">
+          <input
+            class="input__form"
+            type="text"
+            placeholder="Titulo"
+            name="nombre"
+            required
+          />
+          <select
+            class="input__form"
+            name="categorias"
+            id="categorias"
+            required
+          >
+            <option value="">Elegir opcion</option>
+            <option value="starwars">Star-Wars</option>
+            <option value="consolas">Consola</option>
+            <option value="diversos">Diversos</option>
+          </select>
+          <input
+            class="input__form"
+            type="text"
+            placeholder="URL Imagen"
+            name="imgSrc"
+            required
+          />
+          <input
+            class="input__form"
+            type="text"
+            placeholder="Precio"
+            name="precio"
+            required
+          />
+          <textarea
+            placeholder="Descripcion"
+            name="description"
+            id="text__area"
+            cols="30"
+            rows="6"
+            required
+          ></textarea>
+          <input type="hidden" name="id" />
+          <input class="enviar" type="submit" value="Enviar" />
+        </form>
+      </section>
+      <section class="productos">
+        <h2>StarWars</h2>
+        <div class="star-wars__container cards__container"></div>
+        <h2>Consolas</h2>
+        <div class="consolas__container cards__container"></div>
+        <h2>Diversas</h2>
+        <div class="diversos__container cards__container"></div>
+      </section>
+    </main>
+
+    <template id="card__template">
+      <div class="card">
+        <i class="fa-solid fa-trash card__icon trash__icon"></i>
+        <i class="fa-solid fa-pencil card__icon pencil__icon"></i>
+        <img class="card__img" src="" alt="" />
+        <div class="card__detail">
+          <p class="card__title"></p>
+          <p class="card__price"></p>
+          <p class="card__description-hiden"></p>
+        </div>
+      </div>
+    </template>
+
+    <!-- ******************************* -->
+    <!-- ********* ABOUT ********* -->
+    <!-- ******************************* -->
+
+    <aside>
+      <section class="abaut">
+        <div class="prueba__grid">
+          <div class="logo__container">
+            <span class="material-symbols-outlined control">
+              stadia_controller
+            </span>
+            <h1 class="header__title">
+              Alura<span class="header__title-gray">Geek</span>
+            </h1>
+          </div>
+          <div class="about__container">
+            <a href="#">Quienes somos</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anuncie aqui</a>
+          </div>
+        </div>
+        <div class="contact__container">
+          <h2 class="contact__title">Hable con nosotros</h2>
+          <form action="" id="form__contacto">
+            <input
+              class="text__form"
+              type="text"
+              required
+              placeholder="Nombre completo"
+            />
+            <textarea
+              class="textarea__form"
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              required
+              placeholder="Escrite tu mensaje"
+            ></textarea>
+            <input type="submit" class="blue__btn" />
+          </form>
+        </div>
+      </section>
+    </aside>
+    <!-- ******************************* -->
+    <!-- ********* FOOTER ********* -->
+    <!-- ******************************* -->
+    <footer>
+      <div>
+        <p>Creado por Boris Bodeman</p>
+      </div>
+    </footer>
+    <script src="product-generator.js" type="module"></script>
+  </body>
+</html>

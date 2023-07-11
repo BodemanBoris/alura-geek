@@ -1,0 +1,378 @@
+:root {
+  --choose-color: 214;
+  --main-color: hsl(var(--choose-color) 78% 53%);
+  --ligth-color: hsl(var(--choose-color) 90% 85%);
+  --dark-color: hsl(var(--choose-color) 100% 35%);
+  --text-color: hsl(0 0% 27%);
+  --light-text-color: hsl(0 0% 100%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 360px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+.blue__btn {
+  background-color: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  border: 1px solid var(--main-color);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  cursor: pointer;
+}
+.blue__btn:hover {
+  background-color: var(--dark-color);
+}
+
+/* ********************************* */
+/*  **********  HEADER  *********** */
+/* ********************************* */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.2rem;
+  margin-right: 1.5rem;
+  height: 70px;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+}
+.control {
+  font-size: 35px;
+  color: var(--main-color);
+}
+.header__title {
+  font-size: 1.25rem;
+  color: var(--main-color);
+  font-weight: lighter;
+}
+.header__title-gray {
+  color: var(--text-color);
+}
+.sin__decoration {
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.interactive__container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+}
+
+.adm__btn {
+  background-color: var(--light-text-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+  padding: 0.4rem;
+  border: 1px solid var(--main-color);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.adm__btn:hover {
+  background-color: var(--ligth-color);
+  color: var(--text-color);
+}
+
+.not-show {
+  display: none;
+}
+.search {
+  color: var(--text-color);
+  background-color: rgb(210, 210, 210);
+  padding: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.search:hover {
+  transform: scale(1.03);
+  background-color: rgb(201, 201, 201);
+}
+
+/* ********************************* */
+/*  **********  MAIN - HERO IMG  *********** */
+/* ********************************* */
+
+.hero__img {
+  height: 190px;
+  background-image: url(assets/heroImgBG.jpg);
+  background-repeat: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.hero__title {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 0.5rem;
+  margin-bottom: 0.7rem;
+  width: 205px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(98, 98, 98, 0.3);
+}
+.hero__text {
+  color: #fff;
+  font-size: 90%;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: rgb(35, 35, 35) 1px 0 5px;
+}
+.hero__btn {
+  width: 130px;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+/* ********************************* */
+/*  **********  MAIN - PRODUCTS  *********** */
+/* ********************************* */
+
+.product__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.product__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.title__container {
+  padding: 1rem;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link__products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rigth__arrow {
+  color: var(--main-color);
+}
+.link__todos {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 600px;
+  font-size: 1.2rem;
+}
+.product__title {
+  color: var(--text-color);
+  font-weight: 200px;
+}
+.product__item > img {
+  width: 100%;
+}
+.item__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product__none {
+  display: none;
+}
+
+/* ********************************* */
+/*  **********  MAIN - ABOUT  *********** */
+/* ********************************* */
+
+.abaut {
+  background-color: var(--ligth-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.abaut .logo__container {
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo__container {
+  display: flex;
+  justify-content: center;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__container a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--text-color);
+}
+
+.contact__title {
+  margin-top: 1rem;
+  color: var(--text-color);
+  font-weight: 200px;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#form__contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+#form__contacto textarea {
+  resize: none;
+}
+
+.text__form {
+  width: 90%;
+  height: 1.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  border: 1.5px solid rgb(191, 191, 191);
+  padding: 0.5rem;
+}
+.textarea__form {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  border: 1.5px solid rgb(191, 191, 191);
+  font-family: sans-serif;
+  padding: 0.5rem;
+}
+
+#form__contacto .blue__btn {
+  width: 100px;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ********************************* */
+/*  ********** FOOTER *********** */
+/* ********************************* */
+
+footer {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* ********************************* */
+/*  ********** MQ 768 PX *********** */
+/* ********************************* */
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    max-width: 769px;
+  }
+  .interactive__container * {
+    order: 0;
+  }
+  .search__container {
+    order: 1;
+    display: flex;
+    padding: 0.3px;
+    background-color: rgb(210, 210, 210);
+    border-radius: 20px;
+  }
+  .input__search {
+    border: none;
+    width: 200px;
+    background-color: transparent;
+    padding: 0.3rem;
+  }
+  .adm__btn {
+    order: 2;
+  }
+  .not-show {
+    display: block;
+  }
+
+  /*  ********** HERO *********** */
+
+  .hero__img {
+    height: 350px;
+  }
+  .hero__title {
+    font-size: 2rem;
+    width: 400px;
+  }
+  .hero__text {
+    font-size: 1.2rem;
+  }
+
+  /*  ********** PRODUCTS *********** */
+  .product__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*  ********** About *********** */
+  .abaut {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* ********************************* */
+/*  ********** MQ 1100 PX *********** */
+/* ********************************* */
+@media (min-width: 1100px) {
+  body {
+    width: 1100px;
+    max-width: 1101px;
+  }
+  .hero__img {
+    background-position: center;
+  }
+  .hero__container {
+    margin: 2rem;
+  }
+
+  .product__none {
+    display: block;
+  }
+  .product__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

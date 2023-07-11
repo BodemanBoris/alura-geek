@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="products.css" />
+    <title>Productos - AluraGeek</title>
+  </head>
+
+
+  <!-- *************  BODY ************** -->
+
+  <body>
+    <header>
+      <a class="sin__decoration" href="index.html">
+        <div class="logo__container">
+          <span class="material-symbols-outlined control">
+            stadia_controller
+          </span>
+          <h1 class="header__title">
+            Alura<span class="header__title-gray">Geek</span>
+          </h1>
+        </div>
+      </a>
+      <div class="interactive__container">
+      
+      </div>
+    </header>
+
+      <!-- ******************************* -->
+      <!-- ********* MAIN ********* -->
+      <!-- ******************************* -->
+
+      <main class="container">
+        <h1 class="product__title">Consolas</h1>
+        <p class="alert__time">Click en las imagenes para ver su descripcion</p> 
+        <section class="products__container">
+          <!-- MAIN-PRODUCTO-SHOWED -->
+           <div class="main__product">
+            <img class="main__product-imagen" src="" alt="">
+              <div class="main__detail">
+                  <h3 class="main__product-title"></h3>
+                  <p class="main__product-price"></p>
+                  <p class="main__product-description">
+                  </p>
+              </div>
+          </div>
+
+          <div class="another__products">
+            <h2 class="another__title">Productos similares</h2>
+            <!-- ALL PRODUCTS -->
+            <div class="product__insert">
+            </div>
+          </div>
+        </section>
+      </main>
+
+        
+        <template id="card__template">
+          <div class="product__item">
+            <img data-src="assets/insignia-portfolio.png" class="img__product" src="" alt="Insignia one" />
+            <div class="item__detail">
+              <p class="item__name"></p>
+              <small class="item__price"></small>
+              <a class="product__link" href="#">Ver descripcion</a>
+              <input class="input__hiden" type="hidden" name="description" value="">
+            </div>
+          </div>
+      </template>
+      
+
+      <!-- ******************************* -->
+      <!-- ********* ABOUT ********* -->
+      <!-- ******************************* -->
+
+      <section class="abaut">
+        <div class="prueba__grid">
+          <div class="logo__container">
+            <span class="material-symbols-outlined control">
+              stadia_controller
+            </span>
+            <h1 class="header__title">
+              Alura<span class="header__title-gray">Geek</span>
+            </h1>
+          </div>
+          <div class="about__container">
+            <a href="#">Quienes somos</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anuncie aqui</a>
+          </div>
+        </div>
+        <div class="contact__container">
+          <h2 class="contact__title">Hable con nosotros</h2>
+          <form action="" id="form__contacto">
+            <input
+              class="text__form"
+              type="text"
+              required
+              placeholder="Nombre completo"
+            />
+            <textarea
+              class="textarea__form"
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              required
+              placeholder="Escrite tu mensaje"
+            ></textarea>
+            <input type="submit" class="blue__btn" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ******************************* -->
+    <!-- ********* FOOTER ********* -->
+    <!-- ******************************* -->
+    <footer>
+      <div>
+        <p>Creado por Boris Bodeman</p>
+      </div>
+    </footer>
+    <script src="show-products-console.js" type="module"></script>
+  </body>
+</html>

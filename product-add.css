@@ -1,0 +1,73 @@
+.crud__form {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.main__title {
+  text-align: center;
+  color: rgb(47, 47, 47);
+  text-transform: uppercase;
+}
+.card {
+  position: relative;
+}
+.card__icon {
+  position: absolute;
+  z-index: 555;
+  right: 1rem;
+  color: rgb(151, 151, 151);
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 10px rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card__icon:nth-child(2) {
+  right: 4.5rem;
+}
+.card__icon:hover {
+  cursor: pointer;
+  font-size: 2.8rem;
+}
+#form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card__description-hiden {
+  display: none;
+}
+.input__form {
+  height: 2rem;
+}
+textarea {
+  resize: none;
+  font-family: sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.productos h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.productos {
+  margin-bottom: 3rem;
+}
+
+@media (in-width: 768px) {
+  .cards__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  .cards__container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

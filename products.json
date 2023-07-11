@@ -1,0 +1,160 @@
+{
+  "starwars": [
+    {
+      "nombre": "Darth Bader",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars1.png",
+      "price": "$ 1111",
+      "description": "Producto 01",
+      "id": "1"
+    },
+    {
+      "nombre": "Storm Trumper",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars2.png",
+      "price": "$ 2222",
+      "description": "Figura de StormTrumper ",
+      "id": "2"
+    },
+    {
+      "nombre": "03 producto 03",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars3.png",
+      "price": "$3333",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. ",
+      "id": "3"
+    },
+    {
+      "nombre": "04 producto 04",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars4.png",
+      "price": "$44 44",
+      "description": "Producto renovado",
+      "id": "4"
+    },
+    {
+      "nombre": "Producto 05",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars5.png",
+      "price": "$ 5555555555 ",
+      "description": "Este es el producto 05",
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "nombre": "06 producto 06",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars6.png",
+      "price": "$7894",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "nombre": "Darth Bader",
+      "categori": "starwars",
+      "imgSrc": "assets/starwars1.png",
+      "price": "$ 1234",
+      "description": "Figura de accion tamaño real",
+      "id": "wYWCUa4"
+    }
+  ],
+  "consolas": [
+    {
+      "nombre": "La consolita 01",
+      "categori": "consolas",
+      "imgSrc": "assets/consola1.png",
+      "price": "$63455234",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. ",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "02 Consola 02",
+      "categori": "consolas",
+      "imgSrc": "assets/consola2.png",
+      "price": "$2222",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "3",
+      "nombre": "03 Consola 03",
+      "categori": "consolas",
+      "imgSrc": "assets/consola3.png",
+      "price": "$3333",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "4",
+      "nombre": "04 Consola 04",
+      "categori": "consolas",
+      "imgSrc": "assets/consola4.png",
+      "price": "$4444",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "5",
+      "nombre": "05 Consola 05",
+      "categori": "consolas",
+      "imgSrc": "assets/consola5.png",
+      "price": "$5555",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "6",
+      "nombre": "06 Consola 06",
+      "categori": "consolas",
+      "imgSrc": "assets/consola6.png",
+      "price": "$6666",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    }
+  ],
+  "diversos": [
+    {
+      "nombre": "1 Del Diversos",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos1.png",
+      "price": "$552434",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. ",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "02 Diversos 02",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos2.png",
+      "price": "$2222",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "3",
+      "nombre": "03 Diversos 03",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos3.png",
+      "price": "$3333",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "4",
+      "nombre": "04 Diversos 04",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos4.png",
+      "price": "$4444",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "5",
+      "nombre": "05 Diversos 05",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos5.png",
+      "price": "$5555",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    },
+    {
+      "id": "6",
+      "nombre": "06 Diversos 06",
+      "categori": "diversos",
+      "imgSrc": "assets/diversos6.png",
+      "price": "$6666",
+      "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatum esse minima, inventore fugit voluptatem illum. Blanditiis, voluptatum. Natus necessitatibus tempore amet aspernatur sapiente tenetur quo deserunt veritatis at sit. "
+    }
+  ]
+}
