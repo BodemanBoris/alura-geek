@@ -36,7 +36,7 @@ const ocultarMensaje = () => {
 };
 
 const generateProducts = () => {
-  fetch("http://localhost:3000/starwars")
+  fetch("https://products-database.onrender.com/starwars")
     .then((res) => (res.ok ? res.json() : Promise.reject()))
     .then((json) => {
       console.log(json);
