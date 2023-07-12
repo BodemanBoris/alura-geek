@@ -1,7 +1,7 @@
 const d = document;
 const $fragment = d.createDocumentFragment();
 const $fragmentMain = d.createDocumentFragment();
-const $templateMain = d.getElementById("main__template").content;
+//const $templateMain = d.getElementById("main__template").content;
 const $templateProduct = d.getElementById("card__template").content;
 const $main = d.querySelector(".main__product");
 const $insertProduct = d.querySelector(".product__insert");
@@ -40,12 +40,10 @@ const generateProducts = () => {
     .then((res) => (res.ok ? res.json() : Promise.reject()))
     .then((json) => {
       json.forEach((el) => {
-        $templateMain.querySelector(".main__product-imagen").src = el.imgSrc;
-        $templateMain.querySelector(".main__product-title").textContent =
-          el.nombre;
-        $templateMain.querySelector(".main__product-price").textContent =
-          el.price;
-        $templateMain.querySelector(".main__product-description").textContent =
+        $main.querySelector(".main__product-imagen").src = el.imgSrc;
+        $main.querySelector(".main__product-title").textContent = el.nombre;
+        $main.querySelector(".main__product-price").textContent = el.price;
+        $main.querySelector(".main__product-description").textContent =
           el.description;
       });
 
@@ -70,7 +68,7 @@ const generateProducts = () => {
           el.description;
       });
 
-      $main.appendChild($templateMain);
+      //$main.appendChild($templateMain);
       $insertProduct.appendChild($fragment);
     })
     .catch((err) => {
