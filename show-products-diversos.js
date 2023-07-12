@@ -39,6 +39,7 @@ const generateProducts = () => {
   fetch("https://products-database.onrender.com/diversos")
     .then((res) => (res.ok ? res.json() : Promise.reject()))
     .then((json) => {
+      console.log(json);
       json.forEach((el) => {
         $main.querySelector(".main__product-imagen").src = el.imgSrc;
         $main.querySelector(".main__product-title").textContent = el.nombre;
@@ -49,6 +50,8 @@ const generateProducts = () => {
 
       json.forEach((el) => {
         $templateProduct.querySelector(".img__product").src = el.imgSrc;
+        $templateProduct.querySelector(".img__product").dataset.link =
+          el.imgSrc;
         $templateProduct.querySelector(".item__name").innerText = el.nombre;
         $templateProduct.querySelector(".item__price").innerText = el.price;
         $templateProduct.querySelector(".input__hiden").value = el.description;
@@ -61,6 +64,7 @@ const generateProducts = () => {
       //$main.appendChild($templateMain);
       $insertProduct.appendChild($fragment);
     })
+
     .catch((err) => {
       let message = res.statusText || "Ocurrio el maldito Problema";
       $main.insertAdjacentHTML = `Error ${err.status}: ${message}`;
@@ -77,18 +81,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
 });
 
 d.addEventListener("click", (e) => {
-  if (e.target.matches(".img__product")) {
-    console.log(e.target.src);
-    $templateMain.innerText = "";
-    let imagen = d.createElement("img");
-    let title = d.createElement("p");
-
-    imagen.src = e.target.src;
-    title = e.target.src;
-
-    $clone = d.importNode($templateMain, true);
-    $templateMain.appendChild($clone);
-  }
   if (e.target.matches(".product__link")) {
     e.preventDefault();
     fillInfo(e);
