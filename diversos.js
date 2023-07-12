@@ -6,7 +6,7 @@ export default async function getAllDiversos() {
   let $fragment = d.createDocumentFragment();
 
   try {
-    let res = await fetch("http://localhost:3000/diversos"),
+    let res = await fetch("https://products-database.onrender.com/diversos"),
       json = await res.json();
 
     //console.log(json);

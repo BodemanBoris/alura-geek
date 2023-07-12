@@ -48,7 +48,7 @@ d.addEventListener("click", (e) => {
           },
         };
         let res = fetch(
-          `http://localhost:3000/starwars/${e.target.dataset.id}`,
+          `https://products-database.onrender.com/starwars/${e.target.dataset.id}`,
           options
         );
         let json = res.json();

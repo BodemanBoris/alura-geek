@@ -23,7 +23,10 @@ export default async function clickStarWars() {
         };
         let seccion = e.target.categorias.value;
         console.log(seccion);
-        let res = await fetch(`http://localhost:3000/${seccion}`, options);
+        let res = await fetch(
+          `https://products-database.onrender.com/${seccion}`,
+          options
+        );
         let json = await res.json();
         if (!res.ok)
           throw {
@@ -55,7 +58,7 @@ export default async function clickStarWars() {
         let seccion = e.target.categorias.value;
         console.log(seccion);
         let res = await fetch(
-          `http://localhost:3000/${seccion}/${e.target.id.value}`,
+          `https://products-database.onrender.com/${seccion}/${e.target.id.value}`,
           options
         );
         let json = await res.json();

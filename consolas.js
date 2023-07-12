@@ -6,7 +6,7 @@ export default async function getAllConsolas() {
   let $fragment = d.createDocumentFragment();
 
   try {
-    let res = await fetch("http://localhost:3000/consolas"),
+    let res = await fetch("https://products-database.onrender.com/consolas"),
       json = await res.json();
 
     //console.log(json);

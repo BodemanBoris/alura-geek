@@ -6,7 +6,7 @@ export default async function getAllStarWars() {
   let $fragment = d.createDocumentFragment();
 
   try {
-    let res = await fetch("http://localhost:3000/starwars"),
+    let res = await fetch("https://products-database.onrender.com/starwars"),
       json = await res.json();
     //console.log(json);
 
