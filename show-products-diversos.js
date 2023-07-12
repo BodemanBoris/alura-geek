@@ -58,16 +58,6 @@ const generateProducts = () => {
         $fragment.appendChild($clone);
       });
 
-      json.forEach((el) => {
-        $templateMain.querySelector(".main__product-imagen").src = el.imgSrc;
-        $templateMain.querySelector(".main__product-title").textContent =
-          el.nombre;
-        $templateMain.querySelector(".main__product-price").textContent =
-          el.price;
-        $templateMain.querySelector(".main__product-description").textContent =
-          el.description;
-      });
-
       //$main.appendChild($templateMain);
       $insertProduct.appendChild($fragment);
     })
